@@ -39,3 +39,5 @@ SELECT avg(immediate)*100 as immediate_percentage from t1;
 -- Algorithm: 
 -- Step 1. Created a CTE to retrieve immediate as 1 and scheduled as 0
 -- Step 2. avg(immediate)*100
+
+-- Game Play Analysis 4
