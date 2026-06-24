@@ -28,3 +28,10 @@ COUNTED AS(
 
 
 -- Immediate Food Delivery
+
+# Write your MySQL query statement below
+WITH t1 as(SELECT AVG(IF(d1.order_date=d1.customer_pref_delivery_date,1,0)) as immediate
+FROM delivery d1
+GROUP BY d1.ORDER_DATE
+ORDER BY d1.delivery_id)
+SELECT avg(immediate)*100 as immediate_percentage from t1;
